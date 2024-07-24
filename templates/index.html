@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>FAKE NEWS DETECTION</title>
+        
+    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: hwb(200 7% 84% / 0.335);
+                margin: 0;
+                padding: 0;
+
+               .container {
+                text-align: center;
+    
+        }
+            }
+    
+            header {
+                background-color: #1e1515;
+                color: hwb(261 13% 72%);
+                padding: 10;
+                text-align: center;
+            }
+    
+            nav {
+                background-color: #444444;
+                color: #fff;
+                padding: 10;
+                text-align: center;
+            }
+    
+            main {
+                padding: 20;
+            }
+    
+            footer {
+                background-color: #612727;
+                color: hsl(0, 13%, 9%);
+                padding: 10;
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+        
+        </footer>
+    </head>
+<body>
+    <div class="container">
+    <h1>FAKE NEWS DETECTION</h1>
+    <form action="/predict" method="post">
+        <label for="news">enter the news:</label>
+        <input type="str" id="news" name="news" required><br><br>
+            <!-- Add more options for other property types -->
+        </select><br><br>
+        <input type="submit" value="Predict">
+    <h1>FAKE NEWS DETECTION RESULT</h1>
+    <p>Predicted news:  {{ prediction_text }} </p>
+    </form>
+    </div>
+
+    
+</body>
+</html>
